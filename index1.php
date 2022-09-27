@@ -50,19 +50,29 @@
         //             echo ($_GET['hobby'][$i]." ");
         //         }
         //     }
-        if(isSet($_GET['tekst'])) {
-            $tekst = trim($_GET['tekst']);
-            $tekst = htmlspecialchars($tekst);
-            print '<b>Wpisana wartość to: '.$tekst.'</b><br>';
-            print '<a href = "index.php">Powrót do formularza</a>';
-        }
-        else
-        {
-            print '<form action="index.php" method="get">';
-            print '<input type="text" name="tekst">';
-            print '<input type="submit" name="Wyślij">'
-            print '</form>';
-        }
+//         if(isSet($_GET['tekst'])) {
+//             $tekst = trim($_GET['tekst']);
+//             $tekst = htmlspecialchars($tekst);
+//             print '<b>Wpisana wartość to: '.$tekst.'</b><br>';
+//             print '<a href = "index.php">Powrót do formularza</a>';
+//         }
+//         else
+//         {
+//             print '<form action="index.php" method="get">';
+//             print '<input type="text" name="tekst">';
+//             print '<input type="submit" name="Wyślij">'
+//             print '</form>';
+//         }
+    
+//     if(isSet($_POST['nazwisko']) && isSet($_POST['email']) && isSet($_POST['komentarz'])){
+//             $nazwisko=$_POST['nazwisko'];
+//             $email=$_POST['email'];
+//             $komentarz=$_POST['komentarz'];
+//             $adres_do="komentarz@przyklad.pl";
+//             $temat="Komentarz ze strony WWW";
+//             $zawartosc="Nazwa klienta: ".$nazwisko."\n"."Adres pocztowy".$email."\n"."Komentarz klienta: ".$komentarz."\n\";
+//             mail($adres_do, $temat,$zawartosc);
+//         }
     ?>
 </body>
 </html>
