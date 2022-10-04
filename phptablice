@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <?php
+        // $kolory = array('czerwony','zielony','niebieski');
+        // $liczby = array(1,2,3);
+        // $mix = array('żółty',5,18,'czerwony');
+        // echo $kolory[0]." ".$kolory[1]." ".$kolory[2]."<br>";
+        // echo $liczby[0]." ".$liczby[1]." ".$liczby[2]."<br>";
+        // echo $mix[0]." ".$mix[1]." ".$mix[2]."<br>";
+
+        // for($i = 0;$i <10; $i++){
+        //     $tablica[$i] = rand(1, 100);
+        //     echo $tablica[$i]." ";
+        // }
+        // sort($tablica);
+        // echo "<br><br> Tablica posortowana rosnąco <br>";
+        // for($i = 0; $i<10; $i++){
+        //     echo $tablica[$i]." ";
+        // }
+        // echo "<br>";
+        // rsort($tablica);
+        // for ($i = 0; $i<10; $i++){
+        //     echo $tablica[$i]." ";
+        // }\
+
+        // $kolory = array
+        // (
+        //     "kolor1" => "czerwony",
+        //     "kolor2" => "zielony",
+        //     "kolor3" => "niebieski",
+        // );
+        // echo "Zawartość tablicy: <br>";
+        // echo $kolory["kolor1"].", ".$kolory["kolor2"].", ".$kolory["kolor3"];
+
+
+        // $kolory['kolor1'] = "czerwony";
+        // $kolory['kolor2'] = "zielony";
+        // $kolory['kolor3'] = "niebieski";
+        // echo "Zawartość tablicy: <br>";
+        // foreach($kolory as $klucz => $kolor){
+        //     echo "kolory['$klucz'] = kolor";
+        //     echo "<br>";
+        // }
+
+        // $tablica = array(6,7,0,2,5,9,6,0,1);
+        // echo "Zawartośc tablicy: <br>";
+        // foreach($tablica as $wartosc){
+        //     echo $wartosc;
+        // }
+
+        $tab1 = array(6,7,0,2,5,9,6,0,1);
+        echo implode(', ',$tab1);
+        echo "<br>";
+        $ciag = 'jeden, dwa, trzy, cztery';
+        $tab2 = explode(', ',$ciag);
+        echo implode(', ',$tab2)
+    ?>
+</body>
+</html>
