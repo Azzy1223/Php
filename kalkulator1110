@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <?php
+        // if(isSet($_POST['a']))&&(isSet($_POST['b'])){
+        //     if($_POST['a']!="0"%%($_POST['b'] !="0")){
+        //         $a=$_POST['a'];
+        //         $b=$_POST['b'];
+        //         $suma=$a+$b;
+        //         echo "Wuma wynosi: ".$suma;
+        //     }
+        //     else{
+        //         print('<form action="index.php",method="post">');
+        //         print('<br><br>Podaj 1 liczbę: <input type="text" name="a" value="0">');
+        //         print('<br><br>Podaj 2 liczbę: <input type="text" name="b" value="0">');
+        //         print('<br<br><input type="submit" value="Wyślij"></form>');
+        //     }
+        // }
+        // else{
+        //     print('<form action="index.php",method="post">');
+        //     print('<br><br>Podaj 1 liczbę: <input type="text" name="a" value="0">');
+        //     print('<br><br>Podaj 2 liczbę: <input type="text" name="b" value="0">');
+        //     print('<br<br><input type="submit" value="Wyślij"></form>');
+        // }
+
+
+        // ZAD1
+        // for($i=0;$i<=100;$i++){
+        //     if($i%4==0){
+        //         print($i)."<br>";
+        //     }
+        // }
+
+        // ZAD2
+        // for($i=100;$i>=0;$i--){
+        //     print($i)."<br>";
+        // }
+
+          if(isSet($_POST['a'])&&(isSet($_POST['b']))){
+            // $a=$_POST['a'];
+            // $b=$_POST['b'];
+            // // ZAD1
+            // // for($i=0;$i<=100;$i++){
+            // // if($i%4==0){
+            // //     print($i)."<br>";
+            // // // }
+            // $a=$_POST['a'];
+            // $b=$_POST['b'];
+            
+           // ZAD2
+        // for($i=100;$i>=0;$i--){
+        //     print($i)."<br>";
+        // }
+
+        //zad3
+        $a=7;
+        $b=187;
+        for($a;$a<=$b;$a++){
+            print($a)."<br>";
+        }
+        
+
+            // ZAD4
+            // $a=6;
+            // $b=10;
+            // if($a<$b){
+            //     print("Liczba a jest wieksza od b")."<br>";
+            // }
+            // else{
+            //     print("Liczba b jest wieksza od a")."<br>";
+            // }
+        }
+        else{
+            print('<form action="index.php",method="post">');
+            print('<br><br>Podaj 1 liczbę: <input type="text" name="a" value="0">');
+            print('<br><br>Podaj 2 liczbę: <input type="text" name="b" value="0">');
+            print('<br<br><input type="submit" value="Wyślij"></form>');
+        }
+    ?>
+</body>
+</html>
