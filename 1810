@@ -1,0 +1,100 @@
+index
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <?php
+        $a=$_POST['a'];
+        $b=$_POST['b'];
+        // $c=$_POST['c'];
+
+    //zad1
+        // $srednia=0;
+        // for($i=$a;$i<=$b;$i++){
+        //     $srednia+=$i;
+        // }
+        // $srednia=$srednia/($b-$a);
+        // print("Średnia z tego przedziału wyniesie: ".$srednia);
+
+
+    //zad2
+        // if($a>0){
+        //     print("Liczba A jest większa od zera! <br>");
+        // }
+        // else if($a==0){
+        //     print("Liczba A jest równa zeru! <br>");
+        // }
+        // else{
+        //     print("Liczba A jest mniejsza od zera! <br>");
+        // }
+        
+
+        // if($b>0){
+        //     print("Liczba B jest większa od zera! <br>");
+        // }
+        // else if($b==0){
+        //     print("Liczba B jest równa zeru! <br>");
+        // }
+        // else{
+        //     print("Liczba B jest zmniejsza od zera! <br>");
+        // }
+
+        // if($c>0){
+        //     print("Liczba C jest większa od zera! <br>");
+        // }
+        // else if($c==0){
+        //     print("Liczba C jest równa zeru! <br>");
+        // }
+        // else{
+        //     print("Liczba C jest zmniejsza od zera! <br>");
+        // }
+
+
+    //zad3
+        // $silnia=1;
+        // for($i=$b;$i>0;$i--){
+        //     $silnia*=$i;
+        // }
+        // print("Silnia z ".$b." wynosi: ".$silnia);
+
+    //zad4
+            // $potega=1;
+            // for($i=0;$i<10;$i++){
+            //     $potega*=2;
+            // }
+            // print("2 do potegi 10 wynosi: ".$potega);
+
+
+    ?>
+</body>
+</html>
+
+
+///////////////////////////////////////////////////////////////////////////////
+kalk.php
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="index.php" method="post">
+        Podaj A:
+        <input type="text" name="a">
+        Podaj B: 
+        <input type="text" name="b">
+        <!-- Podaj C: -->
+        <!-- <input type="text" name="c"> -->
+        <input type="submit" value="Wyślij">
+    </form>
+</body>
+</html>
