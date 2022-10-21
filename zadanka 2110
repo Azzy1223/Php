@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <?php
+
+    //zad2
+    
+    // for($i=0;$i<10000;$i++){
+    //     echo $tab[$i]=$i+1;
+    // }
+    // $ile=count($tab);
+    // for($i=0;$i<$ile;$i++)
+    // print(" ".$tab[$i]);
+
+    //zad2
+        // $j=0;
+        // for($i=10000;$i>0;$i--){
+        //     $tab[$j]=$i;
+        //     $j++;
+        // }
+        // $ile=count($tab);
+        // for($i=0;$i<$ile;$i++){
+        //     print("<br>".$tab[$i]);
+        // }
+
+    //zad3
+            // $j=0;
+            // for($i=0;$i<20000;$i++)
+            // if($i%10==0){
+            //     $tab[$j]=$i;
+            //     $j++;
+            // }
+            // $ile=count($tab);
+            // for($i=0;$i<$ile;$i++){
+            //     print("<br>".$tab[$i]);
+            // }
+
+    //zad4
+    for($i=0;$i<30000;$i++){
+        $tab[$i] = rand(1,1000);
+        print(" ".$tab[$i]);
+    }
+    rsort($tab);
+    $ile = count($tab);
+    print("<br><br>");
+    for($i=0;$i<$ile;$i++){
+        print(" ".$tab[$i]);
+    }
+
+
+    ?>
+</body>
+</html>
