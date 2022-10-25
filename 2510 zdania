@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <?php
+        echo "zad1  <br>";
+        for($i=0;$i<1375;$i++){
+            if($i%13==0){
+               print(" ".$i); 
+            }
+            
+        }
+
+
+        echo "<br> zad2 <br>";
+        for($i=1521;$i>=3;$i--){
+            print($i." ");
+        }
+
+        echo "<br> zad3 <br>";
+
+        $a=92;
+        $b=1127;
+
+        echo("<br>Od najmniejszej do największej: <br>");
+        for($i=$a;$i<$b;$i++){
+            print($i." ");
+        }
+        echo("<br>Od największej do najmniejszej: <br>");
+
+        for($i=$b;$i>$a;$i--){
+            print($i." ");
+        }
+        
+        echo "<br> zad4 <br>";
+        $a1=-9;
+        $b1=14;
+
+        if($a1<$b1){
+            print("Liczba a jest mniejsza od liczby b!<br>");
+        }else if($a1==$b1){
+            print("Liczby są równe!<br>");
+        }else{
+            print("Liczba b jest większa od liczby a!<br>");
+        }
+            
+        
+            
+
+    ?>
+</body>
+</html>
