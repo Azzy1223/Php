@@ -33,6 +33,13 @@
         echo("<br>");
         echo("zawartość tablicy samochody: <br>");
         echo $samochody['samochod1'].", ".$samochody['samochod2'].", ".$samochody['samochod3'].", ".$samochody['samochod4'].", ".$samochody['samochod5'].", ".$samochody['samochod6'].", ".$samochody['samochod7'];
+        
+        foreach($kolory as $klucz => $kolor){
+            echo "kolory['klucz'] = $kolor";
+            echo "<br>";
+        }
+        
+        
     ?>
 </body>
 </html>
