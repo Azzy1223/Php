@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <?php
+        $kolory=array
+        (
+            "kolor1" => "czerwony",
+            "kolor2" => "zielony",
+            "kolor3" => "niebieski",
+            "kolor4" => "czarny",
+            "kolor5" => "biały",
+            "kolor6" => "pomarańczowy",
+            "kolor7" => "brązowy",
+        );
+        $samochody=array
+        (
+            "samochod1" => "Audi",
+            "samochod2" => "BMW",
+            "samochod3" => "Mercedes-Benz",
+            "samochod4" => "Peugeot",
+            "samochod5" => "Mitsubishi",
+            "samochod6" => "Toyota",
+            "samochod7" => "Porshce",
+        );
+        echo("zawartość tablicy kolory: <br>");
+        echo $kolory['kolor1'].", ".$kolory['kolor2'].", ".$kolory['kolor3'].", ".$kolory['kolor4'].", ".$kolory['kolor5'].", ".$kolory['kolor6'].", ".$kolory['kolor7'];
+        echo("<br>");
+        echo("zawartość tablicy samochody: <br>");
+        echo $samochody['samochod1'].", ".$samochody['samochod2'].", ".$samochody['samochod3'].", ".$samochody['samochod4'].", ".$samochody['samochod5'].", ".$samochody['samochod6'].", ".$samochody['samochod7'];
+    ?>
+</body>
+</html>
