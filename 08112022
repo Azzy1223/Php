@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <?php 
+        // echo time();
+        // echo "<br>";
+        // echo mktime(15,20,0,5,12,2010);
+        // echo "<br>";
+        // echo microtime();
+        // date('Y-m-d H:i:s');
+
+        // $data = new DateTime();
+        // echo $data -> format('Y-m-d H:i:s');
+
+        // $dzien = 8;
+        // $miesiac = 11;
+        // $rok = 2022;
+
+        // if(checkdate($miesiac, $dzien, $rok))
+        //     echo "Poprawna data";
+        // else
+        //     echo "Niepoprawna data";
+
+        // $teraz = new DateTime(date('Y-m-d'));
+        // $koniec = new DateTime('2018-06-22');
+        // $roznica = $teraz -> diff($koniec);
+        // echo $roznica -> format('%m miesięcy %d dni');
+        // echo '<br>';
+        // echo $roznica -> format('%a dni');
+         
+        if(!($plik = fopen('text.html','r'))){
+            echo "Nie można otworzyć pliku!";
+        }
+        else{
+            while(!feof($plik)){
+                $str = fgets($plik);
+                echo nl2br($str);
+            }
+            fclose($plik);
+        }
+        
+        
+        
+        
+        
+        
+        if(!($plik = fopen('text.html','r'))){
+            echo "Nie można otworzyć pliku!";
+        }
+        else{
+            while(($str = fgetc($plik))!==false){
+                if($str = "\n"){
+                    $str = '<br>';
+                }
+                echo $str;
+            }
+            fclose($plik);
+        }
+        
+        
+        
+        
+        
+         if(!($plik = fopen('text.html','r'))){
+            echo "Nie można otworzyć pliku!";
+        }
+        else{
+            while(!feof($plik)){
+                echo fread($plik, 4096);
+            }
+            fclose($plik);
+        }
+    ?>
+
+</body>
+</html>
