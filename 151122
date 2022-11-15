@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <?php 
+        // if (!($plik = fopen('test.html','r'))){
+        //     echo"Nie moge otworzyć pliku!";
+        // }
+        // else{
+        //     while(!feof($plik)){
+        //         $str = fgets($plik);
+        //         echo n12br($str);
+        //     }
+        //     fclose($plik);
+        // }
+
+        // if (!($plik = fopen('test.html','r'))){
+        //     echo"Nie moge otworzyć pliku!";
+        // }
+        // else{
+        //     while(($str = fgetc($plik))!== false){
+        //         if($str == "\n"){
+        //             $str = "<br>";
+        //         }
+        //     }
+        //     fclose($plik);
+        // }
+
+        // if (!($plik = fopen('test.html','r'))){
+        //     echo"Nie moge otworzyć pliku!";
+        // }
+        // else{
+        //     while(!feof($plik)){
+        //         echo fread($plik, 4096);
+        //     }
+        //     fclose($plik);
+        // }
+
+        $katalog = "./";
+        if($openkat = opendir($katalog)){
+            while(($plik))
+        }
+    ?>
+
+</body>
+</html>
