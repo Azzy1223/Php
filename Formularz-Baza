@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <?php
+
+    if(isset($_POST['tabela']))
+    {
+        $tabela=$_POST['tabela'];
+        $polaczenie=@mysqli_connect("localhost","root","","rezerwacja1") or die("nie połączono");
+        $zapytanie="$tabela";
+        $wynik=@mysqli_query($polaczenie, $zapytanie)or die("nie dodano rekordu");
+        mysqli_close($polaczenie);
+        print("Dane poprawnie dodane do bazy");
+    }
+    else
+    {
+        header('location:formularz.html');
+    }
+
+    // Create table pasazer(id_pasazera int not null auto_increment primary key, imie text, nazwisko text, kraj text);
+
+    ?>
+</body>
+</html>
+
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action='tworzenietabeli.php' method='post'>
+        Wykonaj zapytanie
+    <input type='text' name='tabela'/>
+    <br/>
+    <br/>
+    <br/>
+    <input type='submit' value='wykonaj zapytanie' />
+</body>
+</html>
